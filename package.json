@@ -1,0 +1,20 @@
+{
+  "name": "glitch-new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "web-dev-server --node-resolve --open --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "powerglitch": "^2.3.2"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.4.4"
+  }
+}
