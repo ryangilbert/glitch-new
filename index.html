@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Glitch test</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .blue-text {
+        color: blue;
+      }
+      #unique-element {
+        background-color: yellow;
+      }
+      .padding-10 {
+        padding: 10px;
+      }
+      div:hover {
+        background-color: lightgrey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="blue-text">Hello, this is a heading!</h1>
+    <p id="unique-element" class="padding-10">
+      This paragraph has a unique ID and some padding.
+    </p>
+    <p id="first">This is the first paragraph with a non-unique ID.</p>
+    <p id="second">This is the second paragraph with the same non-unique ID.</p>
+    <div class="padding-10">
+      <img
+        src="https://www.felinemedicalclinic.com/wp-content/uploads/2019/01/cat-reading-book.jpg"
+        alt="Placeholder Image 1"
+        height="250"
+        width="400"
+      />
+      <img
+        src="https://www.bellaandduke.com/wp-content/uploads/2023/01/Border-collie-owners-dog-breed-guide-1.png"
+        alt="Placeholder Image 2"
+        height="250"
+        width="400"
+      />
+    </div>
+    <button class="blue-text">Click me!</button>
+    <!-- <script src="/dist/bundle.js"></script> -->
+    <script src="https://unpkg.com/powerglitch@latest/dist/powerglitch.min.js"></script>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

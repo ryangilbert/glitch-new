@@ -32,13 +32,15 @@ chrome.action.onClicked.addListener(async (tab) => {
           tabId: tab.id,
         },
         func: () => {
-          const s = document.createElement('script');
-          s.src = chrome.runtime.getURL('loadPowerglitch.js');
-          s.onload = function () {
-            this.remove();
-          };
-          (document.head || document.documentElement).appendChild(s);
+          // const s = document.createElement('script');
+          // s.src = chrome.runtime.getURL('script.js');
+          // s.type = 'module';
+          // s.onload = function () {
+          //   this.remove();
+          // };
+          // (document.head || document.documentElement).appendChild(s);
           const body = document.querySelector('body');
+          console.log('checking:', document.querySelectorAll('script'));
           PowerGlitch.glitch(body);
         },
       });

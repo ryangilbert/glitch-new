@@ -1,17 +1,17 @@
-// import { PowerGlitch } from 'powerglitch';
+const newEl = document.createElement('div');
+newEl.innerHTML += 'Extra stuff';
+const body = document.querySelector('body');
+body.appendChild(newEl);
 
-document.addEventListener('DOMContentLoaded', () => {
-  const image = document.querySelector('img');
-  const div = document.querySelector('div');
-  const body = document.querySelector('body');
-  // PowerGlitch.glitch(image);
-  // PowerGlitch.glitch(div);
-  PowerGlitch.glitch(body);
-});
+const powerGlitchScript = document.createElement('script');
+powerGlitchScript.setAttribute(
+  'src',
+  'https://unpkg.com/powerglitch@latest/dist/powerglitch.min.js'
+);
+document.head.appendChild(powerGlitchScript);
 
-// function powerglitch(d) {
-//   console.log(d);
-//   ('use strict');
+// (function (d) {
+//   'use strict';
 //   var E = Object.defineProperty,
 //     $ = Object.defineProperties,
 //     P = Object.getOwnPropertyDescriptors,
@@ -258,5 +258,4 @@ document.addEventListener('DOMContentLoaded', () => {
 //   (d.PowerGlitch = T),
 //     (d.mergeOptions = m),
 //     Object.defineProperty(d, '__esModule', { value: !0 });
-// }
-// this.window = this.window || {};
+// })((this.window = this.window || {}));

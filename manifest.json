@@ -29,9 +29,17 @@
       }
     }
   },
+  "content_scripts": [
+    {
+      "world": "MAIN",
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"],
+      "run_at": "document_start"
+    }
+  ],
   "web_accessible_resources": [
     {
-      "resources": ["loadPowerglitch.js"],
+      "resources": ["script.js"],
       "matches": ["<all_urls>"]
     }
   ]
